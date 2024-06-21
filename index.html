@@ -12,7 +12,7 @@
     #define spin_amount 0.3
     #define contrast 3.
 
-    // #define PIXEL_SIZE_FAC 700.
+    #define PIXEL_SIZE_FAC 700.
 
     // default colours
     // #define colour_1 vec4(1.0,0.3725490196,0.3333333333,1.0)
@@ -29,7 +29,7 @@
     void main( )
     {
       // uncomment to enable pixelated bg
-      // float pixel_size = length(iResolution.xy)/PIXEL_SIZE_FAC;
+       float pixel_size = length(iResolution.xy)/PIXEL_SIZE_FAC;
       float pixel_size = 1.0;
       vec2 uv = (floor(gl_FragCoord.xy*(1./pixel_size))*pixel_size - 0.5*iResolution.xy)/length(iResolution.xy) - vec2(0.12, 0.);
       
@@ -56,6 +56,9 @@
       float c1p = max(0.,1. - contrast_mod*abs(1.-paint_res));
       float c2p = max(0.,1. - contrast_mod*abs(paint_res));
       float c3p = 1. - min(1., c1p + c2p);
+
+
+
 
       // Output to screen
       gl_FragColor = (0.3/contrast)*colour_1 + (1. - 0.3/contrast)*(colour_1*c1p + colour_2*c2p + vec4(c3p*colour_3.rgb, c3p*colour_1.a));

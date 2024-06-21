@@ -24,6 +24,34 @@ let jokers = [
      image_url: "img/j_clockwork.png",
      rarity: "Common"
    },
+   {
+     name: "Tea Time",
+     text: [
+       "{C:mult}+Mult{} equal number of years since mid-May 1994"
+     ],
+     image_url: "img/j_tea_time.png",
+     rarity: "Uncommon"
+   },
+   {
+     name: "Triangle",
+     text: [
+		"Each scored {C:attention}3{}",			
+		"adds {C:mult}+3{} Mult,",
+		"and Joker adds +3 Mult if played hand contains",
+		"{C:attention}Three of a Kind{}",
+     ],
+     image_url: "img/j_triangle.png",
+     rarity: "Common"
+   },
+   {
+     name: "Endless Eight",
+     text: [
+		"Each scored {C:attention}8{}",			
+		"adds a copy of itself to your hand",
+     ],
+     image_url: "img/j_endless_eight.png",
+     rarity: "Uncommon"
+   },
 ]
 
 // works the same. 
@@ -127,22 +155,22 @@ let blinds = [
 ]
 
 let shop_items = [
-  {
-    name: "Joker",
-    text: [
-      "{C:mult}+4{} Mult"
-    ],
-    image_url: "img/j_joker.png",
-    rarity: "Voucher"
-  },
-  {
-    name: "Joker",
-    text: [
-      "{C:mult}+4{} Mult"
-    ],
-    image_url: "img/j_joker.png",
-    rarity: "Pack"
-  },
+ // {
+ //   name: "Joker",
+ //   text: [
+ //     "{C:mult}+4{} Mult"
+ //   ],
+ //   image_url: "img/j_joker.png",
+ //   rarity: "Voucher"
+ // },
+ // {
+ //   name: "Joker",
+ //   text: [
+ //     "{C:mult}+4{} Mult"
+ //   ],
+ //   image_url: "img/j_joker.png",
+ //   rarity: "Pack"
+ // },
 ]
 
 let cols = {
