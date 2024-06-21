@@ -57,15 +57,6 @@
       float c2p = max(0.,1. - contrast_mod*abs(paint_res));
       float c3p = 1. - min(1., c1p + c2p);
 
-
-	function rgb()
-	{
-	colour_1.r = colour_1.r + 0.1;
-	colour_2.g = colour_2.g + 0.1;
-	colour_3.b = colour_3.b + 0.1;
-	}
-	setInterval('rgb()',1000)
-
       // Output to screen
       gl_FragColor = (0.3/contrast)*colour_1 + (1. - 0.3/contrast)*(colour_1*c1p + colour_2*c2p + vec4(c3p*colour_3.rgb, c3p*colour_1.a));
     }
