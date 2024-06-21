@@ -69,10 +69,14 @@
 	vec4 blue_channel = texture(u_texture, uv + vec2(0, blue_shift));
 
       // Output to screen
-      gl_FragColor = (0.3/contrast)*colour_1 + (1. - 0.3/contrast)*(colour_1*c1p + colour_2*c2p + vec4(c3p*colour_3.rgb, c3p*colour_1.a));
+      //gl_FragColor = (0.3/contrast)*colour_1 + (1. - 0.3/contrast)*(colour_1*c1p + colour_2*c2p + vec4(c3p*colour_3.rgb, c3p*colour_1.a));
 	  
 	  // Комбинирование цветов с учетом сдвигов
-	  gl_FragColor = vec4(red_channel.r, green_channel.g, blue_channel.b, 1.0);
+	vec4 combined_color = vec4(red_channel.r, green_channel.g, blue_channel.b, 1.0);
+
+	// Применение вашего текущего выражения для gl_FragColor
+	gl_FragColor = (0.3/contrast)*combined_color + (1. - 0.3/contrast)*(combined_color*c1p + combined_color*c2p + vec4(c3p*combined_color.rgb, c3p*combined_color.a));
+	  
     }
   </script>
 
