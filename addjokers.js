@@ -7,6 +7,15 @@ let jokers = [
   //   image_url: "img/j_joker.png",
   //   rarity: "Common"
   // }
+   {
+     name: "Witch Kitty",
+     text: [
+       "Each scored {C:attention}9{}",			
+		"adds {X:mult,C:white}x1.5{} Mult",
+     ],
+     image_url: "img/j_witch_kitty.png",
+     rarity: "Uncommon"
+   }
 ]
 
 // works the same. 
