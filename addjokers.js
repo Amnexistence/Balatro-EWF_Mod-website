@@ -19,7 +19,7 @@ let jokers = [
     {
      name: "Clockwork",
      text: [
-       "{C:chips}+#1#{} chips of minute at which past round ended",
+       "{C:chips}Chips{} of minute at which past round ended",
      ],
      image_url: "img/j_clockwork.png",
      rarity: "Common"
