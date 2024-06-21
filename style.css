@@ -42,7 +42,7 @@ h1 {
 
 .cards {
   display: flex;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 2fr));
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   justify-content: center;
   flex: 1;
   gap: 1rem;
@@ -56,7 +56,7 @@ h1 {
   padding: 1rem;
   border: 2px solid white;
   border-radius: 1rem;
-  width: 22rem;
+  width: 30rem;
 
   background-color: #374244;
 }
