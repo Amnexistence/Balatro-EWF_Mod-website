@@ -62,6 +62,42 @@ let jokers = [
      image_url: "img/j_binary_code.png",
      rarity: "Common"
    },
+   {
+     name: "Noble",
+     text: [
+		    "Gains {C:chips}+5{} chips for each {C:attention}jack{}",
+			"held in hand on every played hand",
+     ],
+     image_url: "img/j_noble.png",
+     rarity: "Common"
+   },
+   {
+     name: "Golden Strawberry",
+     text: [
+		    "At the end of a {C:attention}round{} you gain {C:money}${},",			
+			"equal count of {C:attention}High Card{} played",
+     ],
+     image_url: "img/j_golden_strawberry.png",
+     rarity: "Uncommon"
+   },
+   {
+     name: "Milk inside a bag of milk inside a bag of milk ...",
+     text: [
+		   "{C:chips}+Chips{} {C:attention}squared{}",
+            "At the end of a {C:attention}round{} gains {C:chips}+1{},",	
+     ],
+     image_url: "img/j_milk_inside.png",
+     rarity: "Common"
+   },
+   {
+     name: "Fortuna",
+     text: [
+		    "Create random {C:tarot}Tarot{} card",			
+			"after skipping each blind",	
+     ],
+     image_url: "img/j_fortuna.png",
+     rarity: "Uncommon"
+   },
 ]
 
 // works the same. 
