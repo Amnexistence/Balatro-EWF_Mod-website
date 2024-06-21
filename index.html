@@ -58,25 +58,16 @@
       float c3p = 1. - min(1., c1p + c2p);
 
 
-	// Создание переменных для сдвигов по осям X и Y для каждого канала цвета (RGB)
-	float red_shift = 0.01; // Сдвиг для красного канала
-	float green_shift = 0.02; // Сдвиг для зеленого канала
-	float blue_shift = 0.03; // Сдвиг для синего канала
-
-	// Применение эффекта хроматической аберрации
-	vec4 red_channel = texture(u_texture, uv + vec2(red_shift, 0));
-	vec4 green_channel = texture(u_texture, uv + vec2(0, green_shift));
-	vec4 blue_channel = texture(u_texture, uv + vec2(0, blue_shift));
+	function rgb()
+	{
+	colour_1.r = colour_1.r + 0.1;
+	colour_2.g = colour_2.g + 0.1;
+	colour_3.b = colour_3.b + 0.1;
+	}
+	setInterval('rgb()',1000)
 
       // Output to screen
-      //gl_FragColor = (0.3/contrast)*colour_1 + (1. - 0.3/contrast)*(colour_1*c1p + colour_2*c2p + vec4(c3p*colour_3.rgb, c3p*colour_1.a));
-	  
-	  // Комбинирование цветов с учетом сдвигов
-	vec4 combined_color = vec4(red_channel.r, green_channel.g, blue_channel.b, 1.0);
-
-	// Применение вашего текущего выражения для gl_FragColor
-	gl_FragColor = (0.3/contrast)*colour_1+combined_color + (1. - 0.3/contrast)*((colour_1*c1p+combined_color) + (colour_2*c2p+combined_color) + vec4(colour_3.rgb*c3p+combined_color.rgb, c3p*colour_1.a+combined_color.a));
-	  
+      gl_FragColor = (0.3/contrast)*colour_1 + (1. - 0.3/contrast)*(colour_1*c1p + colour_2*c2p + vec4(c3p*colour_3.rgb, c3p*colour_1.a));
     }
   </script>
 
