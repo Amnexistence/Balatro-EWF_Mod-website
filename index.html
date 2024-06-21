@@ -75,7 +75,7 @@
 	vec4 combined_color = vec4(red_channel.r, green_channel.g, blue_channel.b, 1.0);
 
 	// Применение вашего текущего выражения для gl_FragColor
-	gl_FragColor = (0.3/contrast)*colour_1*combined_color + (1. - 0.3/contrast)*(colour_1*combined_color*c1p + colour_2*combined_color*c2p + vec4(colour_3.rgb*c3p*combined_color.rgb, c3p*colour_1.a*combined_color.a));
+	gl_FragColor = (0.3/contrast)*colour_1+combined_color + (1. - 0.3/contrast)*((colour_1*c1p+combined_color) + (colour_2*c2p+combined_color) + vec4(colour_3.rgb*c3p+combined_color.rgb, c3p*colour_1.a+combined_color.a));
 	  
     }
   </script>
