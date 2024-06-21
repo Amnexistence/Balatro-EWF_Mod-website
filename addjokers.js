@@ -52,6 +52,16 @@ let jokers = [
      image_url: "img/j_endless_eight.png",
      rarity: "Uncommon"
    },
+   {
+     name: "Binary Code",
+     text: [
+		 "Each scored {C:attention}10{}",			
+		 "with {C:green}#1# in #2#{} chance {C:green}",
+		 "adds {C:mult}+10{} Mult,",
+     ],
+     image_url: "img/j_binary_code.png",
+     rarity: "Common"
+   },
 ]
 
 // works the same. 
