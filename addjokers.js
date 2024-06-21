@@ -15,7 +15,15 @@ let jokers = [
      ],
      image_url: "img/j_witch_kitty.png",
      rarity: "Uncommon"
-   }
+   },
+    {
+     name: "Clockwork",
+     text: [
+       "{C:chips}+#1#{} chips of minute at which past round ended",
+     ],
+     image_url: "img/j_clockwork.png",
+     rarity: "Common"
+   },
 ]
 
 // works the same. 
