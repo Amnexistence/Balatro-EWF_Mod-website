@@ -17,11 +17,11 @@ let jokers = [
      rarity: "Uncommon"
    },
     {
-     name: "Clockwork",
+     name: "Fast Watch",
      text: [
-       "{C:chips}Chips{} of minute at which past round ended",
+       "{C:chips}+Chips{} of {C:attention}minute at which past round ended * 2{}",
      ],
-     image_url: "img/j_clockwork.png",
+     image_url: "img/j_fast_watch.png",
      rarity: "Common"
    },
    {
@@ -92,7 +92,7 @@ let jokers = [
    {
      name: "Fortuna",
      text: [
-		    "Create random {C:tarot}Tarot{} card",			
+		    "Create {C:attention}2{} random {C:tarot}Tarot{} card (may exceed the limit)",			
 			"after skipping each blind",	
      ],
      image_url: "img/j_fortuna.png",
