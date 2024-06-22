@@ -56,8 +56,8 @@ let jokers = [
      name: "Binary Code",
      text: [
 		 "Each scored {C:attention}10{}",			
-		 "with {C:green}#1# in #2#{} chance {C:green}",
-		 "adds {C:mult}+10{} Mult,",
+		 "with {C:green}1 in 2{} chance {C:green}",
+		 "adds {C:mult}+10{} Mult",
      ],
      image_url: "img/j_binary_code.png",
      rarity: "Common"
@@ -84,7 +84,7 @@ let jokers = [
      name: "Milk inside a bag of milk inside a bag of milk ...",
      text: [
 		   "{C:chips}+Chips{} {C:attention}squared{}",
-            "At the end of a {C:attention}round{} gains {C:chips}+1{},",	
+            "At the end of a {C:attention}round{} gains {C:chips}+1{}",	
      ],
      image_url: "img/j_milk_inside.png",
      rarity: "Common"
